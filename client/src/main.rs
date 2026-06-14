@@ -269,7 +269,7 @@ fn http_report(args: &Args, stat_base: &mut StatRequest) -> Result<()> {
         let stat_rt = sample_all(args, stat_base);
 
         let body_data: Option<Vec<u8>>;
-        let mut content_type = "application/octet-stream";
+        let mut content_type = "application/octet-stream;
         if args.json {
             let data = serde_json::to_string(&stat_rt)?;
             trace!("json_str => {:?}", serde_json::to_string(&data)?);

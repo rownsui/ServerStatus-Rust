@@ -1,0 +1,3 @@
+# CI replay marker for syntax/cargo
+feature_branch: replay-334f8dd4
+workflow: .github/workflows/rust.yml
